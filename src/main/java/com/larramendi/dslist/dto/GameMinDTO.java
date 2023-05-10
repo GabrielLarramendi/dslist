@@ -1,6 +1,7 @@
 package com.larramendi.dslist.dto;
 
 import com.larramendi.dslist.entities.Game;
+import com.larramendi.dslist.projections.GameMinProjection;
 import jakarta.persistence.Column;
 
 public class GameMinDTO {
@@ -19,6 +20,14 @@ public class GameMinDTO {
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
+    }
+
+    public GameMinDTO(GameMinProjection gameMinProjection) {
+        id = gameMinProjection.getId();
+        title = gameMinProjection.getTitle();
+        year = gameMinProjection.getYear();
+        imgUrl = gameMinProjection.getImgUrl();
+        shortDescription = gameMinProjection.getShortDescription();
     }
 
     public Long getId() {
