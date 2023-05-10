@@ -17,9 +17,9 @@ public class Belonging {
     public Belonging() {
     }
 
-    public Belonging(Game game, GameList list, Integer position) {
+    public Belonging(Game game, GameList gameList, Integer position) {
         this.id.setGame(game);
-        this.id.setList(list);
+        this.id.setGameList(gameList);
         this.position = position;
     }
 

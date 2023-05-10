@@ -1,8 +1,8 @@
 package com.larramendi.dslist.controllers;
 
+
 import com.larramendi.dslist.dto.GameDTO;
 import com.larramendi.dslist.dto.GameMinDTO;
-import com.larramendi.dslist.entities.Game;
 import com.larramendi.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
